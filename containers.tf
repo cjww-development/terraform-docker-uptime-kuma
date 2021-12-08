@@ -4,20 +4,14 @@ resource "docker_container" "uptime_kuma" {
 
   restart = var.restart_policy
 
+  dns = var.dns_servers
+
   ports {
     internal = 3001
     external = var.access_port
     ip       = var.access_interface_bind
     protocol = "tcp"
   }
-
-  #  networks_advanced {
-  #    name = docker_network.uptime_kuma_network.name
-  #  }
-
-  #  networks_advanced {
-  #    name = data.docker_network.host_network.name
-  #  }
 
   volumes {
     container_path = "/app/data"

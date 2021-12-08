@@ -39,6 +39,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_access_interface_bind"></a> [access\_interface\_bind](#input\_access\_interface\_bind) | The network interface that the 3001 port will bind to | `string` | `"0.0.0.0"` | no |
 | <a name="input_access_port"></a> [access\_port](#input\_access\_port) | The host port number the internal port 3001 will map to | `number` | `3001` | no |
+| <a name="input_dns_servers"></a> [dns\_servers](#input\_dns\_servers) | What DNS servers the container should use to resolve domains | `set(string)` | n/a | yes |
 | <a name="input_docker_host"></a> [docker\_host](#input\_docker\_host) | The host where docker resides | `string` | n/a | yes |
 | <a name="input_restart_policy"></a> [restart\_policy](#input\_restart\_policy) | The restart policy for the container. Must be one of 'no', 'on-failure', 'always', 'unless-stopped'. Defaults to no. | `string` | n/a | yes |
 | <a name="input_uk_container_name"></a> [uk\_container\_name](#input\_uk\_container\_name) | The name of the Flame container to be created | `string` | n/a | yes |

@@ -51,3 +51,8 @@ variable "access_interface_bind" {
   description = "The network interface that the 3001 port will bind to"
   default     = "0.0.0.0"
 }
+
+variable "dns_servers" {
+  type        = set(string)
+  description = "What DNS servers the container should use to resolve domains"
+}
