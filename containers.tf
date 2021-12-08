@@ -11,6 +11,10 @@ resource "docker_container" "uptime_kuma" {
     protocol = "tcp"
   }
 
+  networks_advanced {
+    name = docker_network.flame_network.name
+  }
+
   volumes {
     container_path = "/app/data"
     host_path      = docker_volume.uptime_kuma_volume.mountpoint
