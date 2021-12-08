@@ -29,7 +29,7 @@ No modules.
 |------|------|
 | [docker_container.uptime_kuma](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/container) | resource |
 | [docker_image.uptime_kuma_image](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/image) | resource |
-| [docker_network.flame_network](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/network) | resource |
+| [docker_network.uptime_kuma_network](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/network) | resource |
 | [docker_volume.uptime_kuma_volume](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/volume) | resource |
 | [docker_registry_image.uptime_kuma](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/data-sources/registry_image) | data source |
 
